@@ -1254,7 +1254,7 @@ private void TableBuilder() {
 								try {
 									string SqlTableBuild = String.Empty;
 									if (!TableExist) {
-										SqlTableBuild = "CREATE TABLE IF NOT EXISTS `event_logger` (`ID` INT NOT NULL AUTO_INCREMENT ,`gameserver` varchar(30) NOT NULL, `event` varchar(30) NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `playername` varchar(35) NULL DEFAULT NULL, `msg` varchar(400) NULL DEFAULT NULL,PRIMARY KEY (`ID`))ENGINE = InnoDB";
+										SqlTableBuild = "CREATE TABLE IF NOT EXISTS `event_logger` (`ID` INT NOT NULL AUTO_INCREMENT ,`gameserver` varchar(30) NOT NULL, `event` varchar(30) NOT NULL, `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP, `playername` varchar(35) NULL DEFAULT NULL, `msg` TEXT NULL DEFAULT NULL,PRIMARY KEY (`ID`))ENGINE = InnoDB";
 										ConsoleWrite("[SQL-TableBuilder] [CreateTable] Plugin create NEW table 'event_logger' SQL database");
 										DebugWrite("^b[SQL-TableBuilder] [CreateTable] Connected to SQL.^n SQL COMMAND (MyCom): " + SqlTableBuild, 4);
 										using (MySqlCommand MyCom = new MySqlCommand(SqlTableBuild, Con)) {
