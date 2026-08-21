@@ -1,8 +1,8 @@
 /*	EventLogger.cs -  Procon Plugin [BF3, BF4, BFH, BC2]
 
-	Version: 1.0.0.0
+	Version: 1.0.0.1
 
-	Development by maxdralle@gmx.com
+	Development by maxdralle@gmx.com, TheTomik
 
 	This plugin file is part of PRoCon Frostbite.
 
